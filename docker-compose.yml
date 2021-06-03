@@ -3,8 +3,9 @@ RUN cd /etc/apk/keys && /
     echo 'http://alpine.adiscon.com/3.7/stable' >> /etc/apk/repositories && /
     apk update && /
     apk add rsyslog && /
-	apk add openrc --no-cache && /
+    apk add openrc --no-cache && /
     rc-status && /
-	cd / && /
-	touch /run/openrc/softlevel && /
+    cd / && /
+    touch /run/openrc/softlevel && /
     rc-service rsyslog start
+    FALA TUUUUUU
